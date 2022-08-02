@@ -1,0 +1,1 @@
+#define MAX_DIGHT_NUM 21
