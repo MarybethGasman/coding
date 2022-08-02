@@ -10,7 +10,7 @@ PWD := $(shell pwd)
 
 BINS = testfib testbigadd fibdrv
 testfib: testfib.c fib.c
-	$(CC) $(FLAGS) -o $@ $^ $(DBGFLAG)
+	$(CC) -lrt $(FLAGS) -o $@ $^ $(DBGFLAG) -std=gnu99
 testbigadd: testbigadd.c fib.c
 	$(CC) $(FLAGS) -o $@ $^ $(DBGFLAG)
 fibdrv: fibdrv.c

@@ -11,7 +11,7 @@ testpartition: quickselect.c testpartition.c
 debugquickselect: debugquickselect.c quickselect.c
 	$(CC) $(FLAGS) $(DBGFLAG) -o $@ $^
 analyzequickselect: analyzequickselect.c quickselect.c
-	$(CC) $(FLAGS) $(DBGFLAG) -o $@ $^
+	$(CC) $(FLAGS) $(DBGFLAG) -o $@ $^ -lrt -std=gnu99
 testcasegenerator: testcasegenerator.c
 	$(CC) $(FLAGS) $(DBGFLAG) -o $@ $^
 clean:
