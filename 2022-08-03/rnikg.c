@@ -1,3 +1,8 @@
+
+#define likely(x)      __builtin_expect(!!(x), 1)
+#define unlikely(x)    __builtin_expect(!!(x), 0)
+
+
 // reverse node in k group
 #define NULL 0
 //  Definition for singly-linked list.
@@ -14,7 +19,7 @@ void head_plugin(struct ListNode** ptr2head, struct ListNode* node) {
 struct ListNode* reverse(struct ListNode* head) {
     struct ListNode* tmp = NULL;
     struct ListNode* i = head;
-    while (i) {
+    while (likely(i)) {
         head = i->next;
         i->next = tmp;
         tmp = i;
@@ -27,7 +32,7 @@ struct ListNode* reverseK(struct ListNode* head, int k, struct ListNode** next, 
     struct ListNode* tmp = NULL;
     struct ListNode* i = head;
     int cnt = 0;
-    while (i && cnt < k) {
+    while (likely(i && cnt < k)) {
         head = i->next;
         i->next = tmp;
         tmp = i;

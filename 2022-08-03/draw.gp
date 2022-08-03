@@ -7,4 +7,5 @@ set xlabel "size of linked list" font "Times-Italic,22"
 
 plot "data" with linespoints linewidth 2 smooth unique title "原版", \
      "data2" with linespoints linewidth 2 smooth unique title "inline优化", \
-     "O3otimization" with linespoints linewidth 2 smooth unique title "O3优化"
+     "O3otimization" with linespoints linewidth 2 smooth unique title "O3优化", \
+     "branch-op" with linespoints linewidth 2 smooth unique title "O3优化+分支优化"
