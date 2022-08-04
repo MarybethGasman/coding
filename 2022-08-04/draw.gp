@@ -3,7 +3,7 @@ set yrange [0:15000]
 # set terminal png font "/usr/share/fonts/truetype/arphic/uming.ttc,20 "
 # set output "statistics.png"
 
-set title "竞赛图求曼哈顿路径"
+set title "竞赛图求曼哈顿通路"
 set ylabel "执行时间/纳秒" font "Times-Italic,20"
 set xlabel "顶点数量" font "Times-Italic,20"
 

@@ -2,4 +2,4 @@
 
 不得不说编译器的optimization效果很不错
 
-![]("./statistics.png")
+![](./statistics.png)
