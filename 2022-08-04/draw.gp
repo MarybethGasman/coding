@@ -1,4 +1,4 @@
-set yrange [0:15000]
+set yrange [0:100000]
 
 # set terminal png font "/usr/share/fonts/truetype/arphic/uming.ttc,20 "
 # set output "statistics.png"
