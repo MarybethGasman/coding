@@ -8,7 +8,7 @@ obj-m := $(TARGET_MODULE).o
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 
-BINS = dfaadd analyzereverse
+BINS = dfaadd analyzereverse Graph
 dfaadd: dfaadd.c
 	$(CC) $(FLAGS) -o $@ $^ $(DBGFLAG)
 analyzereverse: analyzereverse.c rnikg.c

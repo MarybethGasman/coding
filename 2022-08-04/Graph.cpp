@@ -47,7 +47,7 @@ bool hasEdge(vector<int> edges[], int n, int v1, int v2) {
     }
     return std::find(edges[v1].begin(), edges[v1].end(), v2) != edges[v1].end();
 }
-void generateGraphUC(vector<int> edges[], int n) {
+void generateGraphDC(vector<int> edges[], int n) {
     srand((unsigned)time(NULL));
     int edgeNum = n * (n - 1) / 2;
 
@@ -97,7 +97,7 @@ int main() {
 #if defined(VERIFY)
     int n = 1000;
     vector<int> g[n];
-    generateGraphUC(g, n);
+    generateGraphDC(g, n);
 
     // printVisualGraph(g, n);
 
@@ -115,7 +115,7 @@ int main() {
     for (int i = 0; i < MAX_VERTICES_NUM; i++) {
         int n = i;
         vector<int> g[n];
-        generateGraphUC(g, n);
+        generateGraphDC(g, n);
 
         // printVisualGraph(g, n);
 
