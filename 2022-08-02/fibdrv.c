@@ -31,7 +31,7 @@ static long long iter_fib(int n) {
     for (; i < n; i++) {
         fibi_2 = fibi_1;
         fibi_1 = fibi;
-        fibi = fibi_1 + fibi_2;
+        fiibi_1 + fibi_2;
     }
     return fibi;
 }
