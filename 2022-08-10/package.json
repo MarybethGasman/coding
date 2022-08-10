@@ -1,0 +1,16 @@
+{
+  "name": "2022-08-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "websocket.js",
+  "scripts": {
+    "start": "node --inspect websocket.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-ws": "^5.0.2",
+    "ws": "^8.8.1"
+  }
+}

@@ -5,17 +5,21 @@ var app = (function App() {
 	btn?.addEventListener("click", addMessage);
 
 	function getCurrentUser() {
-		return fetch("http://127.0.0.1:3000/user/1")
-		.then(res => res.json())
+		return fetch("http://127.0.0.1:3000/user/1").then((res) => res.json());
 	}
 
 	async function addMessage() {
 		var time = new Date().toDateString();
 		var avatar, name;
 		var content = getContent();
-		await getCurrentUser().then((user) => {
-			({name, avatar} = user);
-		});
+		await getCurrentUser()
+			.then((user) => {
+				({ name, avatar } = user);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+
 		var parent = document.body;
 		var message = `<div class="message">
 			<div class="message__user-info">
