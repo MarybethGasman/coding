@@ -3,7 +3,7 @@ FLAGS = -std=c99 -Wall -Wextra -I.
 DBGFLAG = -g
 
 BINS =  Graph trival_bank
-trie: trie.c
+printmsg: printmsg.c
 	$(CC) $(FLAGS) -o $@ $^ -O3
 
 CPP = g++
