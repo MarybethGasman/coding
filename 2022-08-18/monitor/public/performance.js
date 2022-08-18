@@ -1,0 +1,1 @@
+probeSend(performance.timing);
