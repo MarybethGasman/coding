@@ -1,7 +1,7 @@
 ### Java版的 producer comsumer 问题
 JUC提供了一个BlockingQueue接口，用其实现类即可，比如LinkedBlockingQueue
 
-类似Linux里的ringbuffer，不过BlockingQueue在队满put或队空take会阻塞该线程Condition.（名字由来） 
+类似Linux里的ringbuffer，不过BlockingQueue在队满put或队空take会阻塞该线程（名字由来） 
 另外就是ringbuffer读写是同一把锁，而LBQ不是，因此LBQ使用了原子变量count记录长度，否则两个线程同时读写长度肯定要错
 
 不过LinkedBlockingQueue居然使用单链表，以前一直觉得单链表没什么使用场景，以为只有双向循环链表用的多（像task_struct就是doubly circular)
