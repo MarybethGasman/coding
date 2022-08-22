@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+}
+
+video {
+	width: 100%;
+	position: absolute;
+	transform: rotateX(24deg) rotateY(333deg) translateY(100px);
+}
+.middle {
+	float: left;
+	width: 100%;
+	background-color: blue;
+}
+.inner {
+	margin-left: 300px;
+	/* text-align: center; */
+}
+.left {
+	float: left;
+	width: 300px;
+	margin-left: -100%;
+	background-color: red;
+}
+.right {
+	margin-left: -200px;
+	float: left;
+	width: 200px;
+	background-color: greenyellow;
+}
+.left,
+.middle,
+.right {
+	padding-bottom: 9999px;
+	margin-bottom: -9999px;
+}
+body {
+	overflow-y: hidden;
+}
